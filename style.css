@@ -1,30 +1,26 @@
 /* Base */
 body {
-  background-color: #ffe709; /* Jaune vibrant de fond */
-  color: #000;
-  font-family: "Orbitron", sans-serif; /* Police futuriste */
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-/* Polices et liens */
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
-
 a {
-  color: #1a9fff; /* Bleu électrique */
+  color: #39ff14;
   text-decoration: none;
-  transition: text-shadow 0.3s ease-in-out;
 }
 
 a:hover {
-  text-shadow: 0 0 10px #00c3ff, 0 0 20px #00c3ff, 0 0 30px #00c3ff; /* Effet de néon bleu */
+  text-decoration: underline;
 }
 
 /* Header */
 header {
-  background: #000; /* Arrière-plan noir pour le contraste */
-  color: #fff;
+  background: linear-gradient(to right, #ff2079, #ff00c3, #0078ff, #00ff95);
+  color: #000;
   padding: 20px 0;
   position: sticky;
   top: 0;
@@ -33,67 +29,63 @@ header {
 }
 
 header h1 {
+  margin: 0;
   font-size: 2.5rem;
-  color: #1a9fff; /* Bleu électrique */
-  text-shadow: 0 0 5px #00c3ff, 0 0 15px #00c3ff; /* Effet de néon bleu */
+  background: -webkit-linear-gradient(left, #ff2079, #ff00c3, #0078ff, #00ff95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Neon Glow Text Effect */
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+/* Neon Glow Effect */
 .neon-text {
   color: #fff;
-  text-shadow: 0 0 5px #00c3ff, 0 0 15px #00c3ff, 0 0 30px #00c3ff; /* Effet de néon bleu */
+  text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
+    0 0 40px #39ff14, 0 0 80px #39ff14;
 }
 
-/* Neon Glow Border Effect */
 .neon-border {
-  border: 1px solid #1a9fff; /* Bleu électrique */
-  box-shadow: 0 0 5px #00c3ff, 0 0 15px #00c3ff, 0 0 30px #00c3ff; /* Effet de néon bleu */
+  border: 1px solid #39ff14;
+  box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
+    0 0 40px #39ff14, 0 0 80px #39ff14;
 }
 
 /* Sections */
 section {
   padding: 50px 20px;
-  background-color: #000; /* Arrière-plan noir pour le contraste */
-  color: #fff;
+  text-align: center;
 }
 
-/* Project Cards with Neon Effect */
+section#about,
+section#contact {
+  background-color: #111;
+}
+
+/* Project Cards */
 .project {
-  background-color: #121212; /* Fond sombre pour les cartes de projet */
+  background-color: #222;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  position: relative;
-  z-index: 1;
-}
-
-.project:before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
-  z-index: -1;
-  background: linear-gradient(45deg, #ff2079, #ff00c3, #0078ff, #00ff95);
-  background-size: 400%;
-  border-radius: 5px;
-  transition: background 0.5s;
-}
-
-.project:hover:before {
-  background-position: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .project h3 {
-  font-size: 1.5rem;
-  color: #1a9fff; /* Bleu électrique */
-  text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff; /* Effet de néon bleu */
+  margin-top: 0;
 }
 
 /* Footer */
 footer {
-  background: #121212; /* Fond sombre pour le pied de page */
+  background: #222;
   color: #aaa;
   text-align: center;
   padding: 10px 0;
