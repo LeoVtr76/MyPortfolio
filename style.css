@@ -19,7 +19,14 @@ a:hover {
 
 /* Header */
 header {
-  background: linear-gradient(to right, #ff2079, #ff00c3, #0078ff, #00ff95);
+  background: linear-gradient(
+    to right,
+    #6f2dbd,
+    #a663cc,
+    #b298dc,
+    #b8d0eb,
+    #b9faf8
+  );
   color: #000;
   padding: 20px 0;
   position: sticky;
