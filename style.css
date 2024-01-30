@@ -1,25 +1,44 @@
+/* Base */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
+a {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
 header {
-  background: #333;
-  color: #fff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #0779e4 3px solid;
+  background: linear-gradient(to right, #ff2079, #ff00c3, #0078ff, #00ff95);
+  color: #000;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
 }
 
 header h1 {
-  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(left, #ff2079, #ff00c3, #0078ff, #00ff95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header nav ul {
   list-style: none;
-  text-align: center;
+  padding: 0;
 }
 
 header nav ul li {
@@ -27,33 +46,48 @@ header nav ul li {
   margin: 0 15px;
 }
 
-header nav ul li a {
+/* Neon Glow Effect */
+.neon-text {
   color: #fff;
-  text-decoration: none;
+  text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
+    0 0 40px #39ff14, 0 0 80px #39ff14;
 }
 
+.neon-border {
+  border: 1px solid #39ff14;
+  box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
+    0 0 40px #39ff14, 0 0 80px #39ff14;
+}
+
+/* Sections */
 section {
-  padding: 20px;
-}
-
-section#about {
-  background: #f4f4f4;
-}
-
-section#projects .project {
-  margin-bottom: 20px;
-}
-
-section#contact {
-  background: #e2e2e2;
-}
-
-footer {
-  background: #333;
-  color: #fff;
+  padding: 50px 20px;
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+}
+
+section#about,
+section#contact {
+  background-color: #111;
+}
+
+/* Project Cards */
+.project {
+  background-color: #222;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }
