@@ -1,34 +1,32 @@
-/* Base */
-body {
-  background-color: #0a0a0a;
-  color: #fff;
-  font-family: "Orbitron", sans-serif;
+/* Importation des polices Google */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+/* Réinitialisation de base et styles globaux */
+body,
+html {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  font-family: "Orbitron", sans-serif;
+  background-color: #0a0a0a; /* Couleur de fond sombre */
+  color: #fff; /* Texte blanc pour le contraste */
 }
 
+/* Liens */
 a {
-  color: #39ff14;
+  color: #39ff14; /* Vert cyberpunk pour les liens */
   text-decoration: none;
+  transition: color 0.5s;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #ffffff; /* Changement de couleur au survol */
 }
 
-/* Header */
+/* Header avec une touche de gradient subtil */
 header {
-  background: linear-gradient(
-    to right,
-    #6f2dbd,
-    #a663cc,
-    #b298dc,
-    #b8d0eb,
-    #b9faf8
-  );
-  color: #000;
   padding: 20px 0;
+  background: #121212; /* Arrière-plan plus sobre pour le header */
+  color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -36,7 +34,6 @@ header {
 }
 
 header h1 {
-  margin: 0;
   font-size: 2.5rem;
   background: -webkit-linear-gradient(left, #ff2079, #ff00c3, #0078ff, #00ff95);
   -webkit-background-clip: text;
@@ -53,17 +50,9 @@ header nav ul li {
   margin: 0 15px;
 }
 
-/* Neon Glow Effect */
-.neon-text {
-  color: #fff;
-  text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
-    0 0 40px #39ff14, 0 0 80px #39ff14;
-}
-
-.neon-border {
-  border: 1px solid #39ff14;
-  box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
-    0 0 40px #39ff14, 0 0 80px #39ff14;
+/* Effet de néon discret sur le texte du header */
+header h1 {
+  text-shadow: 0 0 10px #39ff14;
 }
 
 /* Sections */
@@ -72,29 +61,47 @@ section {
   text-align: center;
 }
 
-section#about,
-section#contact {
+/* Alternance des couleurs de fond pour chaque section pour une meilleure séparation */
+section:nth-child(odd) {
   background-color: #111;
 }
 
-/* Project Cards */
+section:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* Cartes de projet avec une bordure subtile de style cyberpunk */
 .project {
   background-color: #222;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-left: 4px solid #39ff14; /* Bordure à gauche pour le style */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.03); /* Effet de zoom subtil au survol */
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.6); /* Ombre légèrement plus prononcée */
 }
 
 .project h3 {
   margin-top: 0;
 }
 
-/* Footer */
+/* Footer plus sobre */
 footer {
-  background: #222;
+  background: #121212; /* Arrière-plan plus sobre pour le footer */
   color: #aaa;
   text-align: center;
   padding: 10px 0;
   margin-top: 20px;
+}
+
+/* Responsive design pour les petits écrans */
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
 }
