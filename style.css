@@ -13,3 +13,6 @@ html {
   display: inline-block;
   cursor: default;
 }
+.text-center {
+  text-align: center;
+}
