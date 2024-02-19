@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="code.js"></script>
   </head>
   <body>
     <header>
@@ -23,10 +25,28 @@
 
     <section id="projects">
       <h2>Mes Projets</h2>
+      <input
+        type="text"
+        id="searchInput"
+        onkeyup="filterProjects()"
+        placeholder="Chercher par langage ou techno..."
+        list="tagSuggestions"
+      />
+      <datalist id="tagSuggestions"></datalist>
+
       <a href="agora/agora.html" class="project-link">
         <div class="project">
           <h3>Agora</h3>
           <p>Une marketplace de mise en enchère de NFT</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React JS</span>
+            <span class="tag">Solidity</span>
+            <span class="tag">Hardhat</span>
+            <span class="tag">ethers.js</span>
+          </div>
         </div>
       </a>
       <a href="dappvote/dappvote.html" class="project-link">
@@ -36,6 +56,15 @@
             Une application décentralisée qui permet de voter entre deux
             candidats
           </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React JS</span>
+            <span class="tag">Solidity</span>
+            <span class="tag">Hardhat</span>
+            <span class="tag">ethers.js</span>
+          </div>
         </div>
       </a>
       <a href="" class="project-link">
