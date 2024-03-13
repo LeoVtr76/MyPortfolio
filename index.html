@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="homepage.css" />
-    <script src="code.js"></script>
-  </head>
-  <body>
-    <header class="text-center">
-      <h1>Mon Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="nav-btn">Accueil</a></li>
-          <li><a href="about.html" class="nav-btn">À propos</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <section id="projects">
-      <h2>Mes Projets</h2>
-      <input
-        type="text"
-        id="searchInput"
-        onkeyup="filterProjects()"
-        placeholder="Chercher par langage ou techno..."
-        list="tagSuggestions"
-      />
-      <datalist id="tagSuggestions"></datalist>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="homepage.css" />
+  <script src="code.js"></script>
+</head>
 
-      <a href="agora/agora.html" class="project-link">
-        <div class="project">
-          <h3>Agora</h3>
-          <p>Une marketplace de mise en enchère de NFT</p>
-          <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">React JS</span>
-            <span class="tag">Solidity</span>
-            <span class="tag">Hardhat</span>
-            <span class="tag">ethers.js</span>
-          </div>
-        </div>
-      </a>
-      <a href="dappvote/dappvote.html" class="project-link">
-        <div class="project">
-          <h3>Dapp de vote</h3>
-          <p>
-            Une application décentralisée qui permet de voter entre deux
-            candidats
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">React JS</span>
-            <span class="tag">Solidity</span>
-            <span class="tag">Hardhat</span>
-            <span class="tag">ethers.js</span>
-          </div>
-        </div>
-      </a>
-      <a href="Poo/poo.html" class="project-link">
-        <div class="project">
-          <h3>Projet POO</h3>
-          <p>Une application Windows Form de gestion d'entreprise</p>
-          <span class="tag">C++</span>
-          <span class="tag">SQL</span>
-        </div>
-      </a>
-      <a href="automate/automate.html" class="project-link">
-        <div class="project">
-          <h3>Automate</h3>
-          <p>Un script bash de compilation et téléversement de code c</p>
-          <span class="tag">Bash</span>
-        </div>
-      </a>
-      <a href="WWW/www.html" class="project-link">
-        <div class="project">
-          <h3>Projet Système Embarqué</h3>
-          <p>Une station Météo sur Arduino Uno</p>
-          <span class="tag">C++</span>
-        </div>
-      </a>
-    </section>
+<body>
+  <header class="text-center">
+    <h1>Mon Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-btn">Accueil</a></li>
+        <li><a href="about.html" class="nav-btn">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="contact">
-      <h2>Contactez-moi</h2>
-      <p>
-        Veuillez me laisser un message à
-        <a href="mailto:leovauthier.pro@gmail.com">leovauthier.pro@gmail.com</a>
-        si vous souhaitez discuter d'un projet.
-      </p>
-    </section>
-  </body>
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <input type="text" id="searchInput" onkeyup="filterProjects()" placeholder="Chercher par langage ou techno..."
+      list="tagSuggestions" />
+    <datalist id="tagSuggestions"></datalist>
+
+    <a href="agora/agora.html" class="project-link">
+      <div class="project">
+        <h3>Agora</h3>
+        <p>Une marketplace de mise en enchère de NFT</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React JS</span>
+          <span class="tag">Solidity</span>
+          <span class="tag">Hardhat</span>
+          <span class="tag">ethers.js</span>
+        </div>
+      </div>
+    </a>
+    <a href="dappvote/dappvote.html" class="project-link">
+      <div class="project">
+        <h3>Dapp de vote</h3>
+        <p>
+          Une application décentralisée qui permet de voter entre deux
+          candidats
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React JS</span>
+          <span class="tag">Solidity</span>
+          <span class="tag">Hardhat</span>
+          <span class="tag">ethers.js</span>
+        </div>
+      </div>
+    </a>
+    <a href="network/network.html" class="project-link">
+      <div class="project">
+        <h3>Projet Réseau</h3>
+        <p>Architecture d'une ville sur Packet Tracer</p>
+        <span class="tag">Packet Tracer</span>
+      </div>
+    </a>
+    <a href="Poo/poo.html" class="project-link">
+      <div class="project">
+        <h3>Projet POO</h3>
+        <p>Une application Windows Form de gestion d'entreprise</p>
+        <span class="tag">C++</span>
+        <span class="tag">SQL</span>
+      </div>
+    </a>
+    <a href="automate/automate.html" class="project-link">
+      <div class="project">
+        <h3>Automate</h3>
+        <p>Un script bash de compilation et téléversement de code c</p>
+        <span class="tag">Bash</span>
+      </div>
+    </a>
+    <a href="WWW/www.html" class="project-link">
+      <div class="project">
+        <h3>Projet Système Embarqué</h3>
+        <p>Une station Météo sur Arduino Uno</p>
+        <span class="tag">C++</span>
+      </div>
+    </a>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <p>
+      Veuillez me laisser un message à
+      <a href="mailto:leovauthier.pro@gmail.com">leovauthier.pro@gmail.com</a>
+      si vous souhaitez discuter d'un projet.
+    </p>
+  </section>
+</body>
+
 </html>
