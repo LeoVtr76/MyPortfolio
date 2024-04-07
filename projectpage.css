@@ -33,7 +33,12 @@ body {
   margin-bottom: 30px;
   color: #e0e0e0;
 }
-
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .links .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -81,4 +86,10 @@ body {
   margin: 5px;
   border-radius: 15px;
   font-size: 14px;
+}
+@media (max-width: 768px) {
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
